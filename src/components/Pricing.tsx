@@ -7,63 +7,69 @@ import { Check, Flame, ArrowRight, Sparkles } from "lucide-react";
 export default function Pricing() {
   const plans = [
     {
-      name: "Paket Starter",
-      target: "Cocok untuk UMKM, Personal Branding, atau Single Page Promotion",
-      price: "Rp 1.499.000",
+      name: "Paket Bansos",
+      target:
+        "Cocok untuk UMKM gaji UMR/Pengangguran ups🫢, biar profilmu dilirik HRD atau bisnis kaum perintis keliatan niat!",
+      price: "Rp 349.000",
       isPopular: false,
       features: [
-        "1 Halaman Responsive Landing Page",
-        "Gratis Domain (.com) & Hosting 1 Thn",
-        "Desain Custom Elegan & Mobile First",
+        "1 Halaman Responsive Landing Page (yang penting tayang dulu yekan)",
+        "Desain Standard Anti Ribet Sat-Set",
+        "Gratis Domain dan Hosting tapi 1 Tahun doang yeh (atau bisa pakai domain sendiri)",
         "Tombol Chat WhatsApp Direct",
         "Integrasi Sosial Media",
-        "Waktu Pengerjaan 3 - 5 Hari Kerja",
-        "Garansi Maintanance 3 Bulan",
+        "Waktu Pengerjaan 1-4 Hari Kerja",
+        "Revisi 3x Aja Selama 1 Minggu Setelah Web Tayang",
       ],
-      ctaText: "Pilih Paket Starter",
+      ctaText: "Pilih Paket Bansos",
       badge: "Hemat",
     },
     {
-      name: "Paket Business Pro",
-      target: "Solusi Terlengkap Perusahaan, Resto, Jasa & Organization",
+      name: "Paket Mendang-Mending",
+      target:
+        "Cocok buat UMKM, toko online, atau profesional yang modalnya pas-pasan tapi seleranya pengen keliatan elite",
+      price: "Rp 1.299.000",
+      isPopular: false,
+      features: [
+        "5 Halaman Menu Bebas",
+        "Gratis Domain Premium & Hosting",
+        "Desain Premium Custom Exclusiv",
+        "SEO On-Page Optimization Google #1",
+        "Integrasi Google Map & Form Kontak",
+        "Fitur CMS Artikel / Blog Berita",
+        "Integrasi Payment Gateway (Only Midtrans)",
+        "Waktu Pengerjaan 30 - 45 Hari Kerja (Antrian Reguler)",
+        "Revisi 5x Selama 1 Bulan Setelah Web Tayang",
+      ],
+      ctaText: "Pilih Paket Mendang-Mending",
+      badge: "Hemat",
+    },
+    {
+      name: "Paket Sultan",
+      target:
+        "Cocok buat yang mampu-mampu aja, pastinya serba lenkap dan eksklusif",
       price: "Rp 2.999.000",
       isPopular: true,
       features: [
-        "Hingga 7 Halaman Menu Bebas",
+        "Extra 7 Halaman Menu Bebas",
         "Gratis Domain Premium & Cloud Hosting",
         "Desain Premium Custom Exclusiv",
         "SEO On-Page Optimization Google #1",
         "Integrasi Google Map & Form Kontak",
         "Fitur CMS Artikel / Blog Berita",
-        "Waktu Pengerjaan 5 - 7 Hari Kerja",
-        "Garansi Technical Support 1 Tahun",
-      ],
-      ctaText: "Pilih Business Pro",
-      badge: "🔥 PALING POPULER",
-    },
-    {
-      name: "Paket Custom Enterprise",
-      target: "Untuk Toko Online (E-Commerce), Portal Web App & System Custom",
-      price: "Rp 5.999.000+",
-      isPopular: false,
-      features: [
-        "Fitur Sesuai Permintaan (Custom Logic)",
-        "Database Architecture Scalable",
-        "Integrasi Payment Gateway & Cek Ongkir",
         "Dashboard Admin POS / CRM / Inventory",
-        "Multi Bahasa (Bilingual / Multilingual)",
-        "Keamanan Tingkat Tinggi SSL & DDoS Guard",
-        "Maintenance & Backup Data Prioritas",
+        "Integrasi Payment Gateway (Multi Payment)",
+        "Pengerjaan Express 5 - 7 Hari Kerja (Prioritas Antrian)",
+        "Revisi 7x Selama 1 Bulan Setelah Web Tayang",
       ],
-      ctaText: "Konsultasi Custom",
-      badge: "Enterprise",
+      ctaText: "Pilih Paket Sultan",
+      badge: "🔥 PALING POPULER",
     },
   ];
 
   return (
     <section id="harga" className="py-24 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <ScrollReveal>
@@ -75,13 +81,15 @@ export default function Pricing() {
 
           <ScrollReveal delayMs={100}>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Investasi Digital Terbaik Tanpa <span className="gradient-fire-text">Biaya Tersembunyi</span>
+              Investasi Digital Terbaik Tanpa{" "}
+              <span className="gradient-fire-text">Biaya Tersembunyi</span>
             </h2>
           </ScrollReveal>
 
           <ScrollReveal delayMs={200}>
             <p className="text-slate-600 text-base sm:text-lg">
-              Semua paket sudah termasuk gratis domain, cloud hosting cepat, dan garansi penuh dari tim SANGIARA DIGITAL.
+              Semua paket sudah termasuk gratis domain, cloud hosting cepat, dan
+              garansi penuh dari tim SANGIARA DIGITAL.
             </p>
           </ScrollReveal>
         </div>
@@ -106,7 +114,9 @@ export default function Pricing() {
 
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-2xl font-bold text-slate-900">{plan.name}</h3>
+                    <h3 className="text-2xl font-bold text-slate-900">
+                      {plan.name}
+                    </h3>
                     {!plan.isPopular && (
                       <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">
                         {plan.badge}
@@ -122,13 +132,18 @@ export default function Pricing() {
                     <span className="text-4xl font-extrabold text-slate-900 tracking-tight">
                       {plan.price}
                     </span>
-                    <span className="text-xs text-slate-500 ml-2 font-medium">/sekali bayar</span>
+                    <span className="text-xs text-slate-500 ml-2 font-medium">
+                      /sekali bayar
+                    </span>
                   </div>
 
                   {/* Features list */}
                   <div className="space-y-3.5 mb-8">
                     {plan.features.map((feat) => (
-                      <div key={feat} className="flex items-start gap-3 text-xs sm:text-sm font-medium text-slate-700">
+                      <div
+                        key={feat}
+                        className="flex items-start gap-3 text-xs sm:text-sm font-medium text-slate-700"
+                      >
                         <div className="w-5 h-5 rounded-full bg-red-100 text-red-600 flex items-center justify-center shrink-0 mt-0.5">
                           <Check className="w-3.5 h-3.5" />
                         </div>
@@ -149,12 +164,10 @@ export default function Pricing() {
                   <span>{plan.ctaText}</span>
                   <ArrowRight className="w-4 h-4" />
                 </a>
-
               </div>
             </ScrollReveal>
           ))}
         </div>
-
       </div>
     </section>
   );
