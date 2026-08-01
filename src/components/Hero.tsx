@@ -241,11 +241,9 @@ export default function Hero() {
         <div className="text-center max-w-4xl mx-auto space-y-6 mb-12">
           {/* Top Pill Badge */}
           <ScrollReveal delayMs={100}>
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-950/80 border border-red-500/40 text-red-400 text-xs sm:text-sm font-semibold tracking-wide shadow-fire-sm backdrop-blur-md">
-              <Flame className="w-4 h-4 text-red-500 fill-red-500 animate-pulse" />
-              <span className="tracking-widest">
-                SANGIARA DIGITAL • Jasa Web Developer #1
-              </span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-950/70 backdrop-blur-3xl  text-orange-600 text-xs font-semibold tracking-wide">
+              <Flame className="w-4 h-4 text-orange-500 fill-orange-500 animate-pulse" />
+              <span className="">SANGIARA DIGITAL • Jasa Web Developer #1</span>
             </div>
           </ScrollReveal>
 
@@ -305,7 +303,7 @@ export default function Hero() {
                 {/* Real screenshot from public/hero-img */}
                 <div className="relative overflow-hidden bg-slate-950">
                   <Image
-                    src="/hero-img/hero-img (3).png"
+                    src="/hero-img/summit.webp"
                     alt="Web Showcase 3"
                     className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                     height={500}
@@ -325,12 +323,12 @@ export default function Hero() {
                     <span className="w-2 h-2 rounded-full bg-emerald-500" />
                   </div>
                   <span className="text-[10px] font-mono text-slate-300 truncate max-w-37.5">
-                    project-showcase-1.png
+                    project-showcase-1.pngsda
                   </span>
                 </div>
                 <div className="relative overflow-hidden bg-slate-950">
                   <Image
-                    src="/hero-img/hero-img (1).png"
+                    src="/hero-img/valhalla.webp"
                     alt="Web Showcase 1"
                     className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                     height={500}
@@ -357,7 +355,7 @@ export default function Hero() {
                 </div>
                 <div className="relative overflow-hidden bg-slate-950">
                   <Image
-                    src="/hero-img/hero-img (2).png"
+                    src="/hero-img/hotelapp.webp"
                     alt="Sangiara Digital Main Showcase"
                     className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                     height={1000}
@@ -382,7 +380,7 @@ export default function Hero() {
                 </div>
                 <div className="relative overflow-hidden bg-slate-950">
                   <Image
-                    src="/hero-img/hero-img (4).png"
+                    src="/hero-img/pos.webp"
                     alt="Web Showcase 4"
                     className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                     height={1000}
@@ -407,7 +405,7 @@ export default function Hero() {
                 </div>
                 <div className="relative overflow-hidden bg-slate-950">
                   <Image
-                    src="/hero-img/hero-img (5).png"
+                    src="/hero-img/instacik.webp"
                     alt="Web Showcase 5"
                     className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                     height={1000}
