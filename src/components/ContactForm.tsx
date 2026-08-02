@@ -55,12 +55,12 @@ export default function ContactForm() {
 
             {/* Quick Contact Badges */}
             <ScrollReveal delayMs={300}>
-              <div className="space-y-4 pt-2">
-                <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+              <div className="pt-2 flex w-full gap-8 justify-evenly flex-wrap">
+                <div className="flex flex-col justify-center items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
                   <div className="w-12 h-12 rounded-xl bg-black text-white flex items-center justify-center shrink-0 shadow-md">
                     <Phone className="w-5 h-5" />
                   </div>
-                  <div>
+                  <div className="text-center">
                     <div className="text-xs text-slate-500 font-medium">
                       WhatsApp Direct Fast Response
                     </div>
@@ -70,11 +70,11 @@ export default function ContactForm() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+                <div className="flex flex-col justify-center items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
                   <div className="w-12 h-12 rounded-xl bg-slate-900 text-white flex items-center justify-center shrink-0 shadow-md">
                     <Mail className="w-5 h-5" />
                   </div>
-                  <div>
+                  <div className="text-center">
                     <div className="text-xs text-slate-500 font-medium">
                       Email Official Agency
                     </div>
@@ -84,19 +84,16 @@ export default function ContactForm() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+                <div className="flex flex-col justify-center items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
                   <div className="w-12 h-12 rounded-xl text-black border-2 border-black flex items-center justify-center shrink-0 shadow-md">
                     <Clock className="w-5 h-5" />
                   </div>
-                  <div>
+                  <div className="text-center">
                     <div className="text-xs text-slate-500 font-medium">
                       Jam Operasional Layanan
                     </div>
                     <div className="text-base font-bold text-slate-900">
-                      1x24 Jam (24/7) Fast Response
-                      <p className="text-sm font-medium">
-                        Slow response di jam 21.00 - 08.00 WIB
-                      </p>
+                      1x24 Jam (Senin - Minggu) <br />
                     </div>
                   </div>
                 </div>
@@ -105,15 +102,17 @@ export default function ContactForm() {
 
             {/* Direct WhatsApp CTA Button */}
             <ScrollReveal delayMs={400}>
-              <a
-                href={`https://wa.me/6282194417430?text=${whatsappMessage}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl text-base font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
-              >
-                <MessageSquare className="w-5 h-5" />
-                <span>Chat WhatsApp Langsung (Fast Response)</span>
-              </a>
+              <div className="w-full inline-flex justify-center">
+                <a
+                  href={`https://wa.me/6282194417430?text=${whatsappMessage}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-max inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl text-base font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 "
+                >
+                  <MessageSquare className="w-5 h-5" />
+                  <span>Chat WhatsApp Langsung (Fast Response)</span>
+                </a>
+              </div>
             </ScrollReveal>
           </div>
 

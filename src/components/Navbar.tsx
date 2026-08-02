@@ -21,7 +21,7 @@ export default function Navbar() {
     { name: "Portofolio", href: "#portofolio" },
     { name: "Keunggulan", href: "#keunggulan" },
     { name: "Harga", href: "#harga" },
-    { name: "FAQ", href: "#faq" },
+    // { name: "FAQ", href: "#faq" },
     { name: "Kontak", href: "#kontak" },
   ];
 
@@ -29,7 +29,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-xs py-3"
+          ? "bg-white/50 backdrop-blur-md border-b border-slate-200/80 shadow-xs py-3"
           : "bg-transparent border-b border-transparent py-6"
       }`}
     >
@@ -41,10 +41,14 @@ export default function Navbar() {
               <Flame className="w-6 h-6 text-white fill-white/20" />
             </div>
             <div className="flex flex-col">
-              <span className={`font-extrabold text-xl tracking-tight leading-none ${isScrolled ? "text-slate-900" : "text-white"}`}>
+              <span
+                className={`font-extrabold text-xl tracking-tight leading-none ${isScrolled ? "text-slate-900" : "text-white"}`}
+              >
                 SANGIARA<span className="gradient-fire-text">.</span>
               </span>
-              <span className={`text-[10px] font-semibold tracking-widest uppercase mt-0.5 ${isScrolled ? "text-slate-500" : "text-red-400"}`}>
+              <span
+                className={`text-[10px] font-semibold tracking-widest uppercase mt-0.5 ${isScrolled ? "text-slate-500" : "text-red-400"}`}
+              >
                 DIGITAL AGENCY
               </span>
             </div>
@@ -88,7 +92,11 @@ export default function Navbar() {
                 : "text-white hover:bg-slate-900"
             }`}
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
       </div>

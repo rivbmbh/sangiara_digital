@@ -2,7 +2,7 @@
 
 import React from "react";
 import ScrollReveal from "./ScrollReveal";
-import { Check, Flame, ArrowRight, Sparkles } from "lucide-react";
+import { Check, ArrowRight, Sparkles } from "lucide-react";
 
 export default function Pricing() {
   const plans = [
@@ -124,7 +124,7 @@ export default function Pricing() {
                     )}
                   </div>
 
-                  <p className="text-xs text-slate-500 mb-6 min-h-[32px] leading-relaxed">
+                  <p className="text-xs text-slate-500 mb-6 min-h-8 leading-relaxed">
                     {plan.target}
                   </p>
 
